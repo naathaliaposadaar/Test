@@ -1,6 +1,6 @@
 <?php
 include("../librerias.php");
-
+$oUsr = New Usuario();
 $newpewd=$_POST['clave'];
 //$newpewd=$_GET['newpwd'];
 
@@ -14,7 +14,7 @@ if (!isset($_SESSION["oUsuario"])){
 <?php 
 }
 
-$oUsr=$_SESSION["oUsuario"];
+//$oUsr=$_SESSION["oUsuario"];
 var_dump($oUsr);
 if($oUsr->ActualizaClave($newpewd)) echo "clave actualizada"; else echo "ERROR";
 ?>
