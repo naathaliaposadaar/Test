@@ -17,5 +17,5 @@ if (!isset($_SESSION["oUsuario"])){
 
 $oUsr=$_SESSION["oUsuario"];
 var_dump($oUsr);
-if($oP->insert()) echo "clave actualizada"; else echo "ERROR";
+if($oP->insert()) echo "producto ingresado"; else echo "ERROR";
 ?>
